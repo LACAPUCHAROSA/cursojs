@@ -19,3 +19,20 @@ for (let i = 0; i < cantItems; i++) {
     }
 
 }
+
+const miCompra = [
+    { nombre: 'camisa', Precio: 2000 },
+    {nombre: 'jean', Precio: 3900 },
+    {nombre: 'Sweter', Precio: 3500 },
+]
+
+const total = miCompra.reduce ((acc, el) =>acc + el.Precio, 0)
+
+console.log (total)
+
+
+let Descuento = 15;
+
+let TotalCompra = resta (multiplicar (total, cantItems), multiplicar (Descuento (total ,Descuento), cantItems));;
+
+console.log ('El total de tu compra es: ${TotalCompra}');
